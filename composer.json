@@ -1,5 +1,5 @@
 {
-    "name": "codefog/contao-social_images",
+    "name": "markocupic/social_images_extended",
     "description": "social_images extension for Contao Open Source CMS",
     "keywords": ["contao", "social", "images"],
     "type": "contao-module",
