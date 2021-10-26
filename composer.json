@@ -1,26 +1,38 @@
 {
-    "name": "markocupic/social_images_extended",
-    "description": "social_images extension for Contao Open Source CMS",
-    "keywords": ["contao", "social", "images"],
-    "type": "contao-module",
-    "license": "LGPL-3.0+",
-    "authors": [
-        {
-            "name": "Marko Cupic",
-            "homepage": "http://github.com/markocupic"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.2",
-        "contao/core-bundle": "~3.2 || ~4.0",
-        "contao-community-alliance/composer-plugin": "~2.4 || ~3.0",
-        "codefog/contao-social_images": ">=3.3.3"
-    },
-    "extra": {
-        "contao": {
-            "sources": {
-                "": "system/modules/social_images_extended"
-            }
-        }
+  "name": "markocupic/social-images-extended-bundle",
+  "type": "contao-bundle",
+  "description": "Contao 4 Social Images Extended Bundle",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Marko Cupic",
+      "homepage": "https://github.com/markocupic"
     }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "php": "^7.0",
+    "contao/core-bundle": "^4.9",
+    "codefog/contao-social_images": "^3.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Markocupic\\SocialImagesExtendedBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config",
+      "src/Resources/contao/dca",
+      "src/Resources/contao/languages",
+      "src/Resources/contao/templates"
+    ]
+  },
+  "extra": {
+    "contao-manager-plugin": "Markocupic\\SocialImagesExtendedBundle\\ContaoManager\\Plugin"
+  }
 }
+
+
+

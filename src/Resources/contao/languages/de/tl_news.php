@@ -17,7 +17,6 @@
  * Fields
  */
 $GLOBALS['TL_LANG']['tl_news']['socialImage'] = array('Social Images', 'Hier kann man das Social Image, welches auf der Seite verfügbar sein soll, hinzufügen.');
-$GLOBALS['TL_LANG']['tl_news']['socialDescription'] = array('Social Text', 'Hier kann man den Bilduntertitel zum Social Image hinzufügen.');
 
 
 /**
